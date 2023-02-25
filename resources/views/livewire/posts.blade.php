@@ -1,5 +1,6 @@
 
 <div>
+
     <table class="w-full divide-y divide-gray-200">
         <thead>
             <tr>

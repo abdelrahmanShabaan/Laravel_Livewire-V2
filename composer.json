@@ -8,6 +8,7 @@
         "php": "^7.3|^8.0",
         "fruitcake/laravel-cors": "^2.0",
         "guzzlehttp/guzzle": "^7.0.1",
+        "inertiajs/inertia-laravel": "^0.6.9",
         "laravel/breeze": "1.9.2",
         "laravel/framework": "^8.75",
         "laravel/jetstream": "^2.9",
@@ -20,6 +21,7 @@
         "fakerphp/faker": "^1.9.1",
         "laravel/sail": "^1.0.1",
         "mockery/mockery": "^1.4.4",
+        "nascent-africa/jetstrap": "^2.5",
         "nunomaduro/collision": "^5.10",
         "phpunit/phpunit": "^9.5.10"
     },
