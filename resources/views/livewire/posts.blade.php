@@ -28,7 +28,7 @@
             {{ __('Edit') }}
         </x-jet-button>
 
-        <x-jet-button class="btn btn-danger">
+        <x-jet-button class="btn btn-d">
             {{ __('Delete') }}
         </x-jet-button>
 
@@ -44,6 +44,20 @@
     <div class="pt-4">
         {{ $posts->links() }}
     </div>
+
+    <x-jet-dialog-modal wire:model="modalFormVisible">
+    <x-slot name="title">
+    {{__('Create post') }}
+    </x-slot>
+
+    <x-slot name="content">
+    {{__('Create post') }}
+    </x-slot>
+
+    <x-slot name="footer">
+            <x-jet-button>{{__('Create Posts')}}</x-jet-button>
+    </x-slot>
+    </x-jet-dialog-modal>
 
 </div>
 

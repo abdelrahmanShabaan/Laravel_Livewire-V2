@@ -11,6 +11,16 @@ class Posts extends Component
 
     use WithPagination;
 
+
+    public $modalFormVisible = false;
+
+
+    public function showCreateModal() {
+      
+        $this->modalFormVisible = true;
+    }
+
+
     public function all_posts()
     {
         return Post::orderByDesc('id')->paginate(5);
