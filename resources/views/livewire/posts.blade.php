@@ -1,6 +1,10 @@
 
 <div>
-
+<div class="flex items-center justify-end py-4 text-right">
+        <x-jet-button wire:click="showCreateModal">
+            {{ __('Create post') }}
+        </x-jet-button>
+    </div>
     <table class="w-full divide-y divide-gray-200">
         <thead>
             <tr>
@@ -17,7 +21,18 @@
                 <td  class="px-6 py-3 border-b border-gray-200">{{$post->id}}</td>
                 <td class="px-6 py-3 border-b border-gray-200"><img src="{{ asset('images/' . $post->image) }}" alt="{{ $post->title }}" width="80"></td>
                 <td  class="px-6 py-3 border-b border-gray-200">{{$post->title}}</td>
-                <td  class="px-6 py-3 border-b border-gray-200">Action</td>
+                <td  class="px-6 py-3 border-b border-gray-200">
+                    
+
+        <x-jet-button class="btn btn-primary">
+            {{ __('Edit') }}
+        </x-jet-button>
+
+        <x-jet-button class="btn btn-danger">
+            {{ __('Delete') }}
+        </x-jet-button>
+
+                </td>
             </tr>
             @empty
             <tr>
